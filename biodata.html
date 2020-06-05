@@ -1,0 +1,223 @@
+<html>
+<head>
+<style>
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #cea177 74%); 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+</style>
+</head>
+<form action="Biodata" method="post">
+ 
+<body>
+<h3>STUDENT BIODATA FORM</h3>
+
+ 
+<table align="center" cellpadding = "10">
+ 
+
+<tr>
+<td>NAME</td>
+<td><input type="text" name="name" maxlength="30"/>
+</td>
+</tr>
+<tr>
+<td>ROLL NUMBER</td>
+<td><input type="text" name="roll" maxlength="30"/>
+</td>
+</tr>
+ 
+<tr>
+<td>FATHER'S NAME</td>
+<td><input type="text" name="father" maxlength="30"/>
+</td>
+</tr>
+<tr>
+<td>MOTHER'S NAME</td>
+<td><input type="text" name="mother" maxlength="30"/>
+
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>BLOOD GROUP</td>
+ 
+<td>
+<select name="bloodgroup" id="bloodgroup">
+<option value="-1">Select</option>
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="B+">B+</option>
+ 
+<option value="B-">B-</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+</select>
+ 
+</td>
+</tr>
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+ 
+<!----- AAdhar Number ---------------------------------------------------------->
+<tr>
+<td>AADHAR NUMBER</td>
+<td>
+<input type="text" name="aadhar"/>
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pin" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+ 
+<tr>
+<td>MOBILE NUMBER</td>
+<td><input type="text" name="mobile" maxlength="30"/>
+</td>
+</tr>
+ 
+<!----- Qualification---------------------------------------------------------->
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="Masters_Board" maxlength="30" /></td>
+<td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+ 
+<!----- Course ---------------------------------------------------------->
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
